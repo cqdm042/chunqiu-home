@@ -11,26 +11,36 @@
 
 <body>
 
-<div class="overlay"></div>
-
 <div class="container">
 
     <h1>🌸 春秋大梦</h1>
 
-    <p>记录折腾与创造 · 发现生活中的美好</p>
+    <p>记录折腾与创造 · 分享美好生活</p>
 
 
     <div class="cards">
 
+
         <a href="https://www.chunqiuys.cc.cd/" target="_blank">
+
             🎬 春秋影视
-            <span>观看精彩影视</span>
+
+            <span>
+                精彩影视 · 随时观看
+            </span>
+
         </a>
 
 
-        <a>
+
+        <a href="#">
+
             🛠 工具箱
-            <span>实用小工具集合</span>
+
+            <span>
+                实用工具 · 持续更新
+            </span>
+
         </a>
 
 
@@ -45,6 +55,7 @@
 
 <style>
 
+
 * {
     box-sizing:border-box;
 }
@@ -53,36 +64,44 @@
 body {
 
     margin:0;
+
     min-height:100vh;
 
-    /*
-    后续你可以把 background.jpg 放到这里
-    */
 
     background:
+
     linear-gradient(
-        rgba(30,80,40,.35),
+        rgba(40,80,40,.35),
         rgba(20,40,20,.55)
     ),
+
     url("/background.jpg");
 
 
     background-size:cover;
+
     background-position:center;
+
     background-attachment:fixed;
+
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
 
     color:white;
 
+
     font-family:
+
     "Microsoft YaHei",
     Arial,
     sans-serif;
 
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
 
 }
 
@@ -90,9 +109,11 @@ body {
 
 .container {
 
+
     text-align:center;
 
     padding:40px;
+
 
 }
 
@@ -100,12 +121,17 @@ body {
 
 h1 {
 
-    font-size:48px;
+
+    font-size:50px;
+
 
     margin-bottom:15px;
 
+
     text-shadow:
-    0 4px 15px rgba(0,0,0,.4);
+
+    0 4px 20px rgba(0,0,0,.5);
+
 
 }
 
@@ -113,11 +139,15 @@ h1 {
 
 p {
 
-    color:#f0f0f0;
 
     font-size:20px;
 
-    margin-bottom:40px;
+
+    color:#f5f5f5;
+
+
+    margin-bottom:45px;
+
 
 }
 
@@ -128,9 +158,12 @@ p {
 
     display:flex;
 
+
     justify-content:center;
 
-    gap:25px;
+
+    gap:30px;
+
 
     flex-wrap:wrap;
 
@@ -142,7 +175,8 @@ p {
 a {
 
 
-    width:220px;
+    width:230px;
+
 
     padding:35px 20px;
 
@@ -150,30 +184,43 @@ a {
     border-radius:25px;
 
 
+
     background:
+
     rgba(255,255,255,.18);
 
 
-    backdrop-filter:blur(12px);
+
+    backdrop-filter:
+
+    blur(12px);
+
 
 
     border:
-    1px solid rgba(255,255,255,.3);
+
+    1px solid rgba(255,255,255,.35);
+
 
 
     color:white;
 
+
     text-decoration:none;
 
 
-    font-size:22px;
+    font-size:24px;
+
 
 
     transition:.35s;
 
 
+
     box-shadow:
-    0 10px 30px rgba(0,0,0,.25);
+
+    0 10px 35px rgba(0,0,0,.25);
+
 
 
 }
@@ -185,9 +232,12 @@ a span {
 
     display:block;
 
-    margin-top:12px;
+
+    margin-top:15px;
+
 
     font-size:14px;
+
 
     color:#eee;
 
@@ -200,11 +250,14 @@ a:hover {
 
 
     transform:
+
     translateY(-10px)
-    scale(1.03);
+    scale(1.05);
+
 
 
     background:
+
     rgba(255,255,255,.3);
 
 
@@ -215,25 +268,34 @@ a:hover {
 @media(max-width:600px){
 
 
-h1{
+    h1 {
 
-font-size:36px;
+        font-size:38px;
 
-}
-
-
-.cards{
-
-flex-direction:column;
-
-}
+    }
 
 
-a{
+    p {
 
-width:260px;
+        font-size:16px;
 
-}
+    }
+
+
+    .cards {
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    a {
+
+        width:270px;
+
+    }
 
 
 }
